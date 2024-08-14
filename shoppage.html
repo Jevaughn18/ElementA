@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/jpg" href="../ElementA JA/element.jpg" sizes="32x32" />
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Shop</title>
+	
+	<link rel="stylesheet" href="shop.css">
+	
+</head>
+
+ <div class="topnav">
+
+<li><img src="../ElementA JA/logo.png" width="80px" height="80px"></li>
+<ul>   
+  <li><a class="active" href="homepage.html">Home</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="Contact Us.html">Contact</a></li>
+    <li><a href="aboutus.html">About Us</a></li>
+	<li><a href="shoppage.html">Shop</a></li>
+	  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Form
+    <i class="fa fa-caret-down"></i>
+  </button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <div class="dropdown-content" id="myDropdown">
+    <a href="../ElementA JA/mform.html">Membership</a>
+    <a href="appf.html">Appointment</a>
+  </div>
+  </div>
+    <div class="oreo">
+   <a href="checkout.html"> <ion-icon name="cart"></ion-icon></a>
+  </div>
+
+  </div>
+</div>
+	</ul>
+	</div>
+ 
+
+
+<section class="products" id="products">
+
+	<div class="heading">
+
+<h2>Our products</h2>
+	</div>
+	
+<div class="products-container">
+	<div class="box">
+
+	<img src="pinkhb.jpeg"  alt="" class="product-img">
+	<h3>PINK SILK SCRUNCHIE</h3>
+	<div class="content">
+	<span>$1,500</span>
+
+
+	
+	
+	</div>
+</div>
+	
+	<div class="box">
+
+	<img src="whitehb.jpeg"  alt="" class="product-img">
+	<h3>WHITE SCRUNCHIE</h3>
+	<div class="content">
+	<span>$1,500</span>
+	
+
+
+	
+	
+	</div>
+</div>
+	
+	<div class="box">
+
+	<img src="greenhb.jpeg"  alt="" class="product-img">
+	<h3>GREEN SILK SCRUNCHIE</h3>
+	<div class="content">
+	<span>$1,500</span>
+
+
+	
+	
+	</div>
+</div>
+	
+	<div class="box">
+
+	<img src="lavenderhb.jpeg"  alt="" class="product-img">
+	<h3>LAVENDER SILK SCRUNCHIE</h3>
+	<div class="content">
+	<span>$1,500</span>
+	
+	
+
+
+	</div>
+</div>
+	
+	<div class="box">
+
+	<img src="mirror.png"  alt="" class="product-img">
+	<h3>Look Within Mini Mirrors</h3>
+	<div class="content">
+	<span>$1,000</span>
+	
+	
+
+
+	</div>
+</div>
+	
+	<div class="box">
+
+	<img src="bratz.jpeg"  alt="" class="product-img">
+	<h3>BRATZ</h3>
+	<div class="content">
+	<span>$1,000</span>
+	
+
+
+	
+	
+	</div>
+</div>
+	
+	<div class="box">
+
+	<img src="barbietingz.jpeg"  alt="" class="product-img">
+	<h3>BARBIE TINGZ</h3>
+	<div class="content">
+	<span>$1,000</span>
+
+
+
+
+	
+	</div>
+</div>
+	
+	<div class="box">
+
+	<img src="pinkeyelash.jpeg"  alt="" class="product-img">
+	<h3>PINK EYELASH APPLICATOR</h3>
+	<div class="content">
+	<span>$1,000</span>
+	
+
+
+	
+	
+	</div>
+</div>
+
+<div class="box">
+
+	<img src="blackhb.jpeg"  alt="" class="product-img">
+	<h3>BLACK SCRUNCHIE</h3>
+	<div class="content">
+	<span>$1,000</span>
+
+
+
+	
+	</div>
+</div>
+
+<div class="box">
+
+	<img src="earned it.jpeg"  alt="" class="product-img">
+	<h3>EARNED IT</h3>
+	<div class="content">
+	<span>$1,000</span>
+	
+
+
+	
+	</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+	   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	
+</section>
+</body>
+  <script>
+  function my() {
+  alert("Product added to cart");
+}
+  function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+</html>

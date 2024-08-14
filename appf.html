@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head> 
+<meta charset="utf-8">
+  <title>Appointment</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="EA.css">
+  <link rel="icon" type="image/jpg" href="../ElementA JA/element.jpg" sizes="32x32" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="appf.css">
+</head>
+
+<header>
+
+ <div class="topnav">
+
+<li><img src="../ElementA JA/logo.png" width="80px" height="80px"></li>
+<ul>   
+  <li><a class="active" href="homepage.html">Home</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="Contact Us.html">Contact</a></li>
+    <li><a href="aboutus.html">About Us</a></li>
+	<li><a href="shoppage.html">Shop</a></li>
+	  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Form
+    <i class="fa fa-caret-down"></i>
+  </button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <div class="dropdown-content" id="myDropdown">
+    <a href="../ElementA JA/mform.html">Membership</a>
+    <a href="appf.html">Appointment</a>
+  </div>
+  </div>
+    <div class="oreo">
+   <a href="checkout.html"> <ion-icon name="cart"></ion-icon></a>
+  </div>
+
+  </div>
+</div>
+	</ul>
+	</div>
+ 
+
+</header>
+<body> 
+
+
+<form style="text-align: center; ">
+ 
+	
+	<div class="inner-layer"> 
+		<div class="container"> 
+		 <div class="row"> 
+		<br>
+		<br>
+		<br>
+		<h1> Application Form</h1>
+			</div> 
+			</div> 
+			 <div class="form-data"> 
+			  <div class="form-head"> 
+		</div>
+
+			  </div> 
+			  <div class="form-body"> 
+			  <div class="form-row"> 
+					<input type="text" placeholder="Enter Full Name" class="form-control"> 
+					<div class="form-row"> 
+					<input type="text" placeholder="Enter Telephone Number" class="form-control"> 
+				<div class="form-row"> 
+					<input type="text" placeholder="Enter Email Address" class="form-control"> 
+				</div> 
+				<div class="form-field">
+				<p>Please select your age:</p>
+			<input type="radio" id="age1" name="age"> 
+			<label for="age1">10-12</label><br>
+			<input type="radio" id="age2" name="age"> 
+			<label for="age2">13-16</label><br>  
+			<input type="radio" id="age3" name="age">
+			<label for="age3">17-20</label><br> 
+			<input type="radio" id="age4" name="age">
+			<label for="age4">21-24</label><br> 
+			<input type="radio" id="age5" name="age">
+			<label for="age5">25 and over</label><br><br> 
+			<br>
+				<h2> Address Information</h2> 
+					<div class="row form-row"> 
+					<input type="text" placeholder="Enter Street" class="form-control"> 
+					<div class="form-row"> 
+					<input type="text" placeholder="Enter Community" class="form-control"> 
+				<div class="form-field"> 
+					<p>Select Place of Residency</p> 
+					<select name="Select" id="Residency"> 
+					<placeholder="Enter Parish" class="form-control">
+						<option value="Spanish Town">Spanish Town</option>
+						<option value="Kingston">Kingston</option>
+						<option value="Portmore">Portmore</option> 
+						<option value="Other">Other</option> 
+						</select> 
+						<br></br>
+						<input type="text" placeholder="Enter Place" class="form-control">
+						<br></br> 
+					<h2> Book Appointment</h2> 
+					<div class="form-field">
+						<label for="Appointment">Appointment:</label>
+						<input type="date" id="Appointment" name="Appointment"> 
+						<br></br>  
+						<h2>Payments</h2> 
+					<div class="form-field"> 
+					<p> Select Payment</p>  
+				
+					    <input type="checkbox" id="Payment">
+						<label for="Payment"> Credit Card</label><br>
+						<input type="checkbox" id="Payment2"> 
+						<label for="Payment"> Venmo</label><br> 
+						<input type="checkbox" id="Payment3">  
+						<label for="Payment"> Cash app</label><br> 
+					
+						<br></br> 
+						<h2>FeedBack</h2> 
+						<p><label for="ElementA">Customer FeedBack about ElementA:</label></p>
+						<p> Do You enjoy shopping at ElementA? Tell us why</br>
+						<textarea id="ElementA" rows="4" cols="50"> 
+						</textarea>
+						<br> 
+						<button onclick="my()">Submit</button>
+
+	
+						
+						<button class="btn btn-success btn-appointment"> 
+						Reset Appointment 
+						</button>
+					</div> 
+					<div class="form-Field"> 
+				</div> 
+	   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</form>
+</body>
+
+<script>
+function my() {
+  alert("Your appoinment has been set!");
+}
+ function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script> 
+</html>

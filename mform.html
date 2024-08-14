@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Membership Form</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="mfcss.css">
+	  <link rel="icon" type="image/jpg" href="../ElementA JA/element.jpg" sizes="32x32" />
+</head>
+<header>
+ <div class="topnav">
+
+<li><img src="../ElementA JA/logo.png" width="80px" height="80px"></li>
+<ul>   
+  <li><a class="active" href="homepage.html">Home</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="Contact Us.html">Contact</a></li>
+    <li><a href="aboutus.html">About Us</a></li>
+	<li><a href="shoppage.html">Shop</a></li>
+	  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Form
+    <i class="fa fa-caret-down"></i>
+  </button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <div class="dropdown-content" id="myDropdown">
+    <a href="../ElementA JA/mform.html">Membership</a>
+    <a href="appf.html">Appointment</a>
+  </div>
+  </div>
+    <div class="oreo">
+   <a href="checkout.html"> <ion-icon name="cart"></ion-icon></a>
+  </div>
+
+  </div>
+</div>
+	</ul>
+	</div>
+
+</header>
+
+
+<div class="col-sm-6">
+<h3>Membership Form</h3>
+
+    </div>
+    <div class="container">
+  <form action="../ElementA JA/homepage.html">
+  <div class="row">
+  
+    <div class="col-25">
+      <label for="fname">First Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Last Name</label>
+    </div>
+	
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Email</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="Your email address..">
+    </div>
+  </div>
+  
+  <div class="row">
+  <div class="col-25">
+  <label for="password">Password</label>
+  </div>
+  <div class="col-75">
+  <input type="password" id="password" name="password" placeholder="Enter your password..">
+ </div>
+  </div>
+
+
+<div class="row">
+  <div class="col-25">
+  <label for="password">Confirm Password</label>
+  </div>
+  <div class="col-75">
+  <input type="password" id="password" name="password" placeholder="Confirm your password..">
+ </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="security">Security Answer</label>
+    </div>
+    <div class="col-75">
+      <select id="region" name="region">
+        <option value="">--Select--</option>
+        <option value="">Your mother's maiden name</option>
+		<option value="">Your favourite month</option>
+		<option value="">Your pet name</option>
+		<option value="">Your favourite football team</option>
+		<option value="">Your first grade teacher's name</option>
+		<option value="">Your favourite color</option>
+		<option value="">Your pet's name</option>
+       
+      </select>
+	  
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="subject">Answer</label>
+    </div>
+	
+    <div class="col-75">
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    </div>
+  </div>
+  
+  <br>
+  
+  <div class="row">
+    <input type="submit" value="Submit">
+  </div>
+  </form>
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</div>
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+</html>
